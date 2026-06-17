@@ -14,5 +14,12 @@
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "biomejs.biome"
-  }
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.associations": {
+    "*.mdx": "markdown"
+  },
+  "cSpell.words": ["delegator", "delegators", "permissionless"]
 }

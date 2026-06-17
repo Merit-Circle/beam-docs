@@ -7,8 +7,6 @@ description: meta description
 
 The Beam Network is a vital part of the Beam ecosystem which stretches far and wide throughout the gaming industry with a suite of smart contracts, decentralized applications, games and other activities. Those that empower and secure the Beam Network, and thereby contribute to a decentralized gaming future, may receive a wide variety of network rewards in return.
 
-These rewards can be divided into [primary](/nodes/rewards/primary) and [secondary](/nodes/rewards/secondary) rewards.
-
 
 ## Epochs
 
@@ -41,8 +39,9 @@ After the 7 days have passed, rewards become claimable via the [Delegation dashb
 
 ## Rewards calculation and distribution process
 
-To better understand how the rewards calculation and distribution works, here are the steps of the process for Primary rewards:
-1. Collect all gas fees into the Rewards contract
+To better understand how the rewards calculation and distribution works, here are the steps of the process:
+
+1. Collect all gas fees and broader ecosystem rewards into the Rewards contract (for more details see [composition of rewards](/nodes/rewards/composition))
 	- Query all active validators for their uptime and request quroum from the nodes
 	- Once uptime is agreed upon by the quorum (67%+ of nodes), the nodes that have 80%+ uptime are marked to receive full rewards, and those with less than 80% have a linear drop off in the rewards they get
 2. Depending on all combined stake weight in the validator set, define reward amounts for each node based on that individual nodes stake weight
@@ -50,15 +49,3 @@ To better understand how the rewards calculation and distribution works, here ar
 3. Rewards are then distributed as follows, per each validator node:
 	- Validator node gets their respective amount of rewards based on the commission percentage
 	- Each delegator in turn gets their respective amount based on their stake weight within that node
-
-### Notes for Secondary rewards
-
-The process for Secondary rewards is largely the same, with slight changes to a few of the steps:
-
-The rewards pool is not based on network gas fees, rather it's a broader ecosystem rewards pool. For exact details see under [secondary rewards](/nodes/rewards/secondary).
-
-For each delegator, the ratio of rewards is as follows: 
-- 80% is based on the weight of the staked Node Tokens 
-- 20% is based on the weight of staked BEAM
-
-This is different to how Primary rewards are calculated - there is no ratio, just the stake weight BEAM.

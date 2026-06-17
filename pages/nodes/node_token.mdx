@@ -1,0 +1,22 @@
+# Phasing out the Node Token
+
+The Beam Network has upgraded its proof-of-stake (PoS) consensus mechanism, removing the Node Token as a requirement for network validation. This strategic change aims to consolidate utility, governance, and staking rewards exclusively around BEAM, streamlining the network architecture.
+
+This update addresses community concerns regarding the dilution of BEAM utility and streamlines the network to better support decentralization efforts, such as more efficient stake weight distribution. Consequently, BEAM now serves as the single asset required to secure and govern the Beam network.
+
+Following the update, the Beam Network operates under the following parameters:
+
+- **Primary Asset:** BEAM is the only asset required for network validation and governance.
+- **Validator Requirements:** The staking requirement to operate a new validator node is set to 50,000 BEAM. No Node Tokens are required.
+- **Unstaking:** Node Tokens can be unstaked immediately, with no mandatory cooldown period for neither validators nor delegators. Validators can additionally unstake Node Tokens without ending their validation.
+- **Rewards Structure:** All network rewards, including transaction (gas) fees and protocol fees, accrue directly to validators and delegators (for more details see [composition of rewards](/nodes/rewards/composition)).
+
+## Node Token redemption process
+
+To ensure that existing Node Token holders are transitioned fairly, the following redemption process has been implemented:
+
+- **Redemption Mechanism:** A dedicated smart contract has been deployed, allowing holders to transfer their Node Tokens in exchange for BEAM.
+- **Redemption Value:** The redemption amount in BEAM is equal to the original minting cost of their Node Token. For tokens minted in the discount period, the redemption value is fixed at 37.878 BEAM, tokens minted after are redeemed for 124,089 BEAM.
+- **Redemption Window:** The option to redeem Node Tokens will remain open for a period of two years. After this timeframe, any remaining BEAM in the smart contract will be returned to the Beam Foundation treasury.
+
+To redeem Node Tokens, unstake your Node Tokens in the [Delegation dashboard](https://nodes.onbeam.com/delegations) first. Then use the [Node Token Redemption](https://nodes.onbeam.com/redeem) page to redeem your unstaked tokens for BEAM. Any yet unclaimed Node Tokens can be redeemed on this page as well.

@@ -32,6 +32,31 @@ const nextConfig = {
         destination: '/chain/nodes/introduction',
         permanent: true,
       },
+      {
+        source: '/nodes/delegation/stake_node_tokens',
+        destination: '/nodes/delegation/stake_beam',
+        permanent: true,
+      },
+      {
+        source: '/nodes/rewards/primary',
+        destination: '/nodes/rewards/composition',
+        permanent: true,
+      },
+      {
+        source: '/nodes/rewards/secondary',
+        destination: '/nodes/rewards/composition',
+        permanent: true,
+      },
+      {
+        source: '/nodes/requirements/mint',
+        destination: '/nodes/requirements',
+        permanent: true,
+      },
+      {
+        source: '/nodes/requirements/node_token',
+        destination: '/nodes/requirements',
+        permanent: true,
+      },
     ];
   },
 };

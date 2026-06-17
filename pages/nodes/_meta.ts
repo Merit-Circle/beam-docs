@@ -6,4 +6,5 @@ export default {
   delegation: 'Delegation',
   rewards: 'Rewards',
   maintenance: 'Maintenance',
+  node_token: 'Phasing out the Node Token',
 };

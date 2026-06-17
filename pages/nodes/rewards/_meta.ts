@@ -1,5 +1,4 @@
 export default {
-  primary: 'Primary rewards',
-  secondary: 'Secondary rewards',
+  composition: 'Composition of rewards',
   claim_rewards: 'How to claim rewards',
 };
